@@ -9,23 +9,26 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Crete+Round&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Wedding Checklist</title>
 </head>
 
 <body>
-    <h1 class="display-1 text-center">Wedding Plan Checklist </h1>
+    <h1 class="text-center">Wedding Plan Checklist </h1>
 
     <div class="container w-100">
         <div class="row">
             <div class="col-sm-6">
                 <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="description" placeholder="Description" /><label
-                        for="description">Description</label>
+                    <input type="text" class="form-control pinkFocus" id="description"
+                        placeholder="Description" /><label for="description">Description</label>
                 </div>
             </div>
             <div class="col-sm-5 form-floating">
-                <select class="form-select" id="dueDate" aria-label="Floating label select example">
+                <select class="form-select pinkFocus" id="dueDate" aria-label="Floating label select example">
                     <option value="12months">After you said I DO</option>
                     <option value="6months">6-12 months before</option>
                     <option value="3months">3-6 months before</option>
@@ -102,7 +105,9 @@
     </div>
 
 
-
+    <footer>
+        <h6> &copy; Michal Duvidzon</h6>
+    </footer>
 
     <script src="script.js"></script>
 </body>

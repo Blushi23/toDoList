@@ -58,37 +58,37 @@ function showTasksInLists() {
                     case "12months":
                         document.getElementById(
                             "12months"
-                        )!.innerHTML += `<div> <span><button class="btn heart" onclick="completeTask(${task.id})"><i class="fa-regular fa-heart"></i></button></span><li class="active-list d-inline-block w-50">${task.description}</li> <span> <button class="btn edit" onclick="updateDescription(${task.id})"><i class="fa-solid fa-pen"></i></button> <button class="btn trash" onclick="deleteTask(${task.id})"><i class="fa-solid fa-trash"></i></button></span> </div> `;
+                        )!.innerHTML += `<div> <span class="icon-container"><button class="btn heart" onclick="completeTask(${task.id})"><i class="fa-regular fa-heart"></i></button></span><li class="active-list d-inline-block w-50">${task.description}</li> <span class="icon-container"> <button class="btn edit" onclick="updateDescription(${task.id})"><i class="fa-solid fa-pen"></i></button> <button class="btn trash" onclick="deleteTask(${task.id})"><i class="fa-solid fa-trash"></i></button></span> </div> `;
                         break;
                     case "6months":
                         document.getElementById(
                             "6months"
-                        )!.innerHTML += `<div> <span><button class="btn heart" onclick="completeTask(${task.id})"><i class="fa-regular fa-heart"></i></button></span><li class="active-list d-inline-block w-50">${task.description}</li> <span> <button class="btn edit" onclick="updateDescription(${task.id})"><i class="fa-solid fa-pen"></i></button> <button class="btn trash" onclick="deleteTask(${task.id})"><i class="fa-solid fa-trash"></i></button></span> </div> `;
+                        )!.innerHTML += `<div> <span class="icon-container"><button class="btn heart" onclick="completeTask(${task.id})"><i class="fa-regular fa-heart"></i></button></span><li class="active-list d-inline-block w-50">${task.description}</li> <span class="icon-container"> <button class="btn edit" onclick="updateDescription(${task.id})"><i class="fa-solid fa-pen"></i></button> <button class="btn trash" onclick="deleteTask(${task.id})"><i class="fa-solid fa-trash"></i></button></span> </div> `;
                         break;
                     case "3months":
                         document.getElementById(
                             "3months"
-                        )!.innerHTML += `<div> <span><button class="btn heart" onclick="completeTask(${task.id})"><i class="fa-regular fa-heart"></i></button></span><li class="active-list d-inline-block w-50">${task.description}</li> <span> <button class="btn edit" onclick="updateDescription(${task.id})"><i class="fa-solid fa-pen"></i></button> <button class="btn trash" onclick="deleteTask(${task.id})"><i class="fa-solid fa-trash"></i></button></span> </div> `;
+                        )!.innerHTML += `<div> <span class="icon-container"><button class="btn heart" onclick="completeTask(${task.id})"><i class="fa-regular fa-heart"></i></button></span><li class="active-list d-inline-block w-50">${task.description}</li> <span class="icon-container"> <button class="btn edit" onclick="updateDescription(${task.id})"><i class="fa-solid fa-pen"></i></button> <button class="btn trash" onclick="deleteTask(${task.id})"><i class="fa-solid fa-trash"></i></button></span> </div> `;
                         break;
                     case "1month":
                         document.getElementById(
                             "1month"
-                        )!.innerHTML += `<div> <span><button class="btn heart" onclick="completeTask(${task.id})"><i class="fa-regular fa-heart"></i></button></span><li class="active-list d-inline-block w-50">${task.description}</li> <span> <button class="btn edit" onclick="updateDescription(${task.id})"><i class="fa-solid fa-pen"></i></button> <button class="btn trash" onclick="deleteTask(${task.id})"><i class="fa-solid fa-trash"></i></button></span> </div> `;
+                        )!.innerHTML += `<div> <span class="icon-container"><button class="btn heart" onclick="completeTask(${task.id})"><i class="fa-regular fa-heart"></i></button></span><li class="active-list d-inline-block w-50">${task.description}</li> <span class="icon-container"> <button class="btn edit" onclick="updateDescription(${task.id})"><i class="fa-solid fa-pen"></i></button> <button class="btn trash" onclick="deleteTask(${task.id})"><i class="fa-solid fa-trash"></i></button></span> </div> `;
                         break;
                     case "1week":
                         document.getElementById(
                             "1week"
-                        )!.innerHTML += `<div> <span><button class="btn heart" onclick="completeTask(${task.id})"><i class="fa-regular fa-heart"></i></button></span><li class="active-list d-inline-block w-50">${task.description}</li> <span> <button class="btn edit" onclick="updateDescription(${task.id})"><i class="fa-solid fa-pen"></i></button> <button class="btn trash" onclick="deleteTask(${task.id})"><i class="fa-solid fa-trash"></i></button></span> </div> `;
+                        )!.innerHTML += `<div> <span class="icon-container"><button class="btn heart" onclick="completeTask(${task.id})"><i class="fa-regular fa-heart"></i></button></span><li class="active-list d-inline-block w-50">${task.description}</li> <span class="icon-container"> <button class="btn edit" onclick="updateDescription(${task.id})"><i class="fa-solid fa-pen"></i></button> <button class="btn trash" onclick="deleteTask(${task.id})"><i class="fa-solid fa-trash"></i></button></span> </div> `;
                         break;
                     case "theDay":
                         document.getElementById(
                             "theDay"
-                        )!.innerHTML += `<div> <span><button class="btn heart" onclick="completeTask(${task.id})"><i class="fa-regular fa-heart"></i></button></span><li class="active-list d-inline-block w-50">${task.description}</li> <span> <button class="btn edit" onclick="updateDescription(${task.id})"><i class="fa-solid fa-pen"></i></button> <button class="btn trash" onclick="deleteTask(${task.id})"><i class="fa-solid fa-trash"></i></button></span> </div> `;
+                        )!.innerHTML += `<div> <span class="icon-container"><button class="btn heart" onclick="completeTask(${task.id})"><i class="fa-regular fa-heart"></i></button></span><li class="active-list d-inline-block w-50">${task.description}</li> <span class="icon-container"> <button class="btn edit" onclick="updateDescription(${task.id})"><i class="fa-solid fa-pen"></i></button> <button class="btn trash" onclick="deleteTask(${task.id})"><i class="fa-solid fa-trash"></i></button></span> </div> `;
                         break;
                     case "after":
                         document.getElementById(
                             "after"
-                        )!.innerHTML += `<div> <span><button class="btn heart" onclick="completeTask(${task.id})"><i class="fa-regular fa-heart"></i></button></span><li class="active-list d-inline-block w-50">${task.description}</li> <span> <button class="btn edit" onclick="updateDescription(${task.id})"><i class="fa-solid fa-pen"></i></button> <button class="btn trash" onclick="deleteTask(${task.id})"><i class="fa-solid fa-trash"></i></button></span> </div> `;
+                        )!.innerHTML += `<div> <span class="icon-container"><button class="btn heart" onclick="completeTask(${task.id})"><i class="fa-regular fa-heart"></i></button></span><li class="active-list d-inline-block w-50">${task.description}</li> <span class="icon-container"> <button class="btn edit" onclick="updateDescription(${task.id})"><i class="fa-solid fa-pen"></i></button> <button class="btn trash" onclick="deleteTask(${task.id})"><i class="fa-solid fa-trash"></i></button></span> </div> `;
                         break;
                     default:
                         break;
