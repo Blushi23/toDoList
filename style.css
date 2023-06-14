@@ -1,0 +1,64 @@
+body {
+    background-image: url(/images/5898436.jpg);
+}
+
+.addButton {
+    margin-top: 10px;
+    background: #ec8585;
+    border-color: rgb(246, 59, 91);
+
+}
+
+.addButton:hover {
+    background-color: rgb(246, 59, 91);
+}
+
+.fa-plus {
+    color: #000
+}
+
+.selectTitle {
+    margin-left: 10px;
+}
+
+.instructions {
+    margin-left: 30px;
+}
+
+.content-area {
+    background-color: #ffffff83;
+    margin: 10px;
+}
+
+.heart,
+.fullHeart {
+    color: rgb(182, 7, 7);
+    text-align: center;
+}
+
+.heart:hover,
+.fullHeart:hover {
+    color: rgb(246, 59, 91);
+}
+
+.edit {
+    color: rgb(33, 33, 241);
+    border: none;
+}
+
+.edit:hover {
+    color: rgb(73, 178, 243)
+}
+
+.trash {
+    color: rgb(74, 71, 71);
+    border: none;
+}
+
+.boxTitle {
+    color: #fff;
+    background-color: #ec8585;
+    box-shadow: 7px -7px 5px #f8c3c3;
+    text-align: center;
+    margin: 15px 10px;
+}
