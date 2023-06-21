@@ -1,7 +1,7 @@
 class Task {
     public id: number;
     public completed: boolean;
-    // public dueDate: string;
+
     constructor(public description: string, public dueDate: string) {
         this.id = Math.floor(Math.random() * 1001);
         this.description = description;
@@ -36,7 +36,6 @@ class TaskManager {
     undoTaskComplition(id: number): void {
         let indexToUpdate = this.tasks.findIndex((task: Task) => task.id == id);
         this.tasks[indexToUpdate].completed = false;
-
     }
 }
 
@@ -98,7 +97,7 @@ function showTasksInLists() {
                     case "12months":
                         document.getElementById(
                             "12months"
-                        )!.innerHTML += `<div><span><button class="btn fullHeart" onclick="undoTaskComplition(${task.id})"><i class="fa-solid fa-heart"></i></button></span> <li class="complete-list d-inline-block w-50 text-decoration-line-through">${task.description}</li> <span>
+                        )!.innerHTML += `<div><span class="icon-container"><button class="btn fullHeart" onclick="undoTaskComplition(${task.id})"><i class="fa-solid fa-heart"></i></button></span> <li class="complete-list d-inline-block w-50 text-decoration-line-through">${task.description}</li> <span class="icon-container">
             <button class="btn edit" disabled><i class="fa-solid fa-pen"></i></button>
             <button class="btn trash" disabled><i class="fa-solid fa-trash"></i></button></span>
             </div> `;
@@ -106,7 +105,7 @@ function showTasksInLists() {
                     case "6months":
                         document.getElementById(
                             "6months"
-                        )!.innerHTML += `<div><span><button class="btn fullHeart" onclick="undoTaskComplition(${task.id})"><i class="fa-solid fa-heart"></i></button></span> <li class="complete-list d-inline-block w-50 text-decoration-line-through">${task.description}</li> <span>
+                        )!.innerHTML += `<div><span class="icon-container"><button class="btn fullHeart" onclick="undoTaskComplition(${task.id})"><i class="fa-solid fa-heart"></i></button></span> <li class="complete-list d-inline-block w-50 text-decoration-line-through">${task.description}</li> <span class="icon-container">
             <button class="btn edit" disabled><i class="fa-solid fa-pen"></i></button>
             <button class="btn trash" disabled><i class="fa-solid fa-trash"></i></button></span>
             </div> `;
@@ -114,7 +113,7 @@ function showTasksInLists() {
                     case "3months":
                         document.getElementById(
                             "3months"
-                        )!.innerHTML += `<div><span><button class="btn fullHeart" onclick="undoTaskComplition(${task.id})"><i class="fa-solid fa-heart"></i></button></span> <li class="complete-list d-inline-block w-50 text-decoration-line-through">${task.description}</li> <span>
+                        )!.innerHTML += `<div><span class="icon-container"><button class="btn fullHeart" onclick="undoTaskComplition(${task.id})"><i class="fa-solid fa-heart"></i></button></span> <li class="complete-list d-inline-block w-50 text-decoration-line-through">${task.description}</li> <span class="icon-container">
             <button class="btn edit" disabled><i class="fa-solid fa-pen"></i></button>
             <button class="btn trash" disabled><i class="fa-solid fa-trash"></i></button></span>
             </div> `;
@@ -122,7 +121,7 @@ function showTasksInLists() {
                     case "1month":
                         document.getElementById(
                             "1month"
-                        )!.innerHTML += `<div><span><button class="btn fullHeart" onclick="undoTaskComplition(${task.id})"><i class="fa-solid fa-heart"></i></button></span> <li class="complete-list d-inline-block w-50 text-decoration-line-through">${task.description}</li> <span>
+                        )!.innerHTML += `<div><span class="icon-container"><button class="btn fullHeart" onclick="undoTaskComplition(${task.id})"><i class="fa-solid fa-heart"></i></button></span> <li class="complete-list d-inline-block w-50 text-decoration-line-through">${task.description}</li> <span class="icon-container">
             <button class="btn edit" disabled><i class="fa-solid fa-pen"></i></button>
             <button class="btn trash" disabled><i class="fa-solid fa-trash"></i></button></span>
             </div> `;
@@ -130,7 +129,7 @@ function showTasksInLists() {
                     case "1week":
                         document.getElementById(
                             "1week"
-                        )!.innerHTML += `<div><span><button class="btn fullHeart" onclick="undoTaskComplition(${task.id})"><i class="fa-solid fa-heart"></i></button></span> <li class="complete-list d-inline-block w-50 text-decoration-line-through">${task.description}</li> <span>
+                        )!.innerHTML += `<div><span class="icon-container"><button class="btn fullHeart" onclick="undoTaskComplition(${task.id})"><i class="fa-solid fa-heart"></i></button></span> <li class="complete-list d-inline-block w-50 text-decoration-line-through">${task.description}</li> <span class="icon-container">
             <button class="btn edit" disabled><i class="fa-solid fa-pen"></i></button>
             <button class="btn trash" disabled><i class="fa-solid fa-trash"></i></button></span>
             </div> `;
@@ -138,7 +137,7 @@ function showTasksInLists() {
                     case "theDay":
                         document.getElementById(
                             "theDay"
-                        )!.innerHTML += `<div><span><button class="btn fullHeart" onclick="undoTaskComplition(${task.id})"><i class="fa-solid fa-heart"></i></button></span> <li class="complete-list d-inline-block w-50 text-decoration-line-through">${task.description}</li> <span>
+                        )!.innerHTML += `<div><span class="icon-container"><button class="btn fullHeart" onclick="undoTaskComplition(${task.id})"><i class="fa-solid fa-heart"></i></button></span> <li class="complete-list d-inline-block w-50 text-decoration-line-through">${task.description}</li> <span class="icon-container">
             <button class="btn edit" disabled><i class="fa-solid fa-pen"></i></button>
             <button class="btn trash" disabled><i class="fa-solid fa-trash"></i></button></span>
             </div> `;
@@ -146,7 +145,7 @@ function showTasksInLists() {
                     case "after":
                         document.getElementById(
                             "after"
-                        )!.innerHTML += `<div><span><button class="btn fullHeart" onclick="undoTaskComplition(${task.id})"><i class="fa-solid fa-heart"></i></button></span> <li class="complete-list d-inline-block w-50 text-decoration-line-through">${task.description}</li> <span>
+                        )!.innerHTML += `<div><span class="icon-container"><button class="btn fullHeart" onclick="undoTaskComplition(${task.id})"><i class="fa-solid fa-heart"></i></button></span> <li class="complete-list d-inline-block w-50 text-decoration-line-through">${task.description}</li> <span class="icon-container">
             <button class="btn edit" disabled><i class="fa-solid fa-pen"></i></button>
             <button class="btn trash" disabled><i class="fa-solid fa-trash"></i></button></span>
             </div> `;
@@ -155,8 +154,6 @@ function showTasksInLists() {
             }
         }
     } else {
-        console.log("arrived");
-
         manager.addTask("Settle on a budget", "12months");
         manager.addTask("Start creating guest list", "12months");
         manager.addTask("Choose 2-3 potential dates", "12months");
@@ -212,7 +209,6 @@ function showTasksInLists() {
         showTasksInLists();
     }
 }
-
 showTasksInLists();
 
 function completeTask(id: number) {
