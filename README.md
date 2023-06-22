@@ -1,4 +1,4 @@
-# toDoList
+# toDoListWeddingPlanner
 
 <p>This is a web application designed to help wedding planners stay organized by managing their to-do lists efficiently. 
   Users can use pre-assigned tasks, adjust them, add new tasks, mark tasks as completed, or delete tasks.<br>
